@@ -731,8 +731,82 @@ img {
   background-color: var(--text-accent-cl);
 }
 
-.sm-bot-list .item {
+.sm-bot-list .item:not(:last-child) {
   margin-right: 10px;
+}
+
+.subscribe-email {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.subscribe-email input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bot-sub-email-label {
+  color: var(--text-links-cl);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 2.24;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.bot-sub-email-box {
+  width: 358px;
+  padding: 15px 16px;
+  color: var(--text-links-cl);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: var(--bg-darck-cl);
+
+  transition: border var(--btn-sh-duration) var(--btn-sh-function);
+}
+
+.bot-sub-email-box:hover,
+.bot-sub-email-box:focus {
+  border: 1px solid var(--text-accent-cl);
+  cursor: pointer;
+  outline: none;
+}
+
+.bot-telegram-btn {
+  margin-left: 12px;
+  margin-top: 51px;
+}
+
+.sub-telegram-btn-text {
+  color: var(--text-links-cl);
+  margin-right: 10px;
+}
+
+.bot-telegram-svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--text-links-cl);
+}
+
+.sub-telegram-btn {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--text-links-cl);
+  background-color: var(--text-accent-cl);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio {
@@ -829,6 +903,7 @@ img {
 .mf-element {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .mf-margin {
@@ -850,6 +925,24 @@ img {
   letter-spacing: 0.01em;
 }
 
+.modal-form-name {
+  position: relative;
+}
+
+.mf-svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  fill: rgba(33, 33, 33, 1);
+
+  transition: fill var(--btn-sh-duration) var(--btn-sh-function);
+}
+
+.modal-form-name {
+  position: relative;
+}
+
 .mf-padding-svg {
   padding: 12px 0 12px 42px;
 }
@@ -857,6 +950,8 @@ img {
 .mf-input-boder {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border var(--btn-sh-duration) var(--btn-sh-function);
 }
 
 .mf-input-height {
@@ -871,6 +966,9 @@ img {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
+  border-radius: 4px;
+
+  transition: border var(--btn-sh-duration) var(--btn-sh-function);
 }
 
 .mf-textarea::placeholder {
@@ -907,6 +1005,20 @@ img {
   color: var(--text-accent-cl);
 }
 
+.mf-element:hover input,
+.mf-element:focus input {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--text-accent-cl);
+  border-radius: 4px;
+}
+
+.mf-element:hover .mf-svg,
+.mf-element:focus .mf-svg {
+  cursor: pointer;
+  fill: var(--text-accent-cl);
+}
+
 .mf-input-point:hover,
 .mf-input-point:focus {
   outline: none;
@@ -914,7 +1026,6 @@ img {
   border: 1px solid var(--text-accent-cl);
   border-radius: 4px;
 }
-
 /* .modal-form input:focus,
 .modal-form textarea:focus,
 .modal-form select:focus {

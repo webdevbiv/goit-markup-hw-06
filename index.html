@@ -436,8 +436,25 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-email">
+          <label for="sub-email" class="bot-sub-email-label">Подпишитесь на рассылку
+          </label>
+          <input type="text" name="sub-email" id="sub-email" class="bot-sub-email-box" placeholder="E-mail">
+        </div>
+        <div class="bot-telegram-btn">
+          <button type="submit" class="sub-telegram-btn">
+            <div class="sub-telegram-btn-text">Подписаться
+            </div>
+            <svg class="bot-telegram-svg">
+              <use href="./images/icons.svg#icon-sub"></use>
+            </svg>
+
+          </button>
+        </div>
       </div>
     </div>
+
+    <!-- modal window + js  -->
     <div class="modal-window is-hidden" data-modal>
       <div class="modal">
         <div class="modal-container">
@@ -449,24 +466,39 @@
           <div>
             <h2 class="modal-titile">Оставьте свои данные, мы вам перезвоним</h2>
 
+            <!-- modal window form -->
             <form class="modal-form">
-
-              <div class="modal-form-name mf-element mf-margin">
+              <div class="modal-form-name mf-margin">
                 <label for="mf-name" class="mf-label">Имя</label>
-                <input type="text" name="mf-name" id="mf-name"
-                  class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point" autofocus>
+                <div class=" mf-element">
+                  <svg class="mf-svg">
+                    <use href="./images/icons.svg#icon-modal-01"></use>
+                  </svg>
+                  <input type="text" name="mf-name" id="mf-name"
+                    class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point" autofocus>
+                </div>
               </div>
 
-              <div class="modal-form-tel mf-element mf-margin">
+              <div class="modal-form-tel mf-margin">
                 <label for="mf-tel" class="mf-label">Телефон</label>
-                <input type="text" name="mf-tel" id="mf-tel"
-                  class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point">
+                <div class="mf-element">
+                  <svg class="mf-svg">
+                    <use href="./images/icons.svg#icon-modal-02"></use>
+                  </svg>
+                  <input type="text" name="mf-tel" id="mf-tel"
+                    class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point">
+                </div>
               </div>
 
-              <div class="modal-form-email mf-element mf-margin">
+              <div class="modal-form-email mf-margin">
                 <label for="mf-email" class="mf-label">Почта</label>
-                <input type="text" name="mf-email" id="mf-email"
-                  class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point">
+                <div class="mf-element">
+                  <svg class="mf-svg">
+                    <use href="./images/icons.svg#icon-modal-03"></use>
+                  </svg>
+                  <input type="text" name="mf-email" id="mf-email"
+                    class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point">
+                </div>
               </div>
 
               <div class="modal-form-comment mf-element mf-margin-comment">
@@ -478,14 +510,12 @@
               <div class="mf-checkbox">
                 <input type="checkbox" name="mf-policy" id="mf-policy" class="mf-input-boder mf-input-point" />
                 <label for="mf-policy" class="">Соглашаюсь с рассылкой и принимаю
-                  <a href="" class="mf-policy">Условия
+                  <a href="#" target="_blank" class="mf-policy">Условия
                     договора</a></label>
                 </label>
               </div>
 
-
-              <button class="mf-button-send" type="button">Отправить</button>
-
+              <button class="mf-button-send" type="submit">Отправить</button>
 
             </form>
           </div>
