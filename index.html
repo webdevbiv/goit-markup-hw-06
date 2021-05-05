@@ -440,12 +440,56 @@
     </div>
     <div class="modal-window is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="btn-modal-close">
-          <svg class="modal-svg ">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
-        <p class="modal-text"></p>
+        <div class="modal-container">
+          <button data-modal-close class="btn-modal-close">
+            <svg class="modal-svg ">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <div>
+            <h2 class="modal-titile">Оставьте свои данные, мы вам перезвоним</h2>
+
+            <form class="modal-form">
+
+              <div class="modal-form-name mf-element mf-margin">
+                <label for="mf-name" class="mf-label">Имя</label>
+                <input type="text" name="mf-name" id="mf-name"
+                  class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point" autofocus>
+              </div>
+
+              <div class="modal-form-tel mf-element mf-margin">
+                <label for="mf-tel" class="mf-label">Телефон</label>
+                <input type="text" name="mf-tel" id="mf-tel"
+                  class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point">
+              </div>
+
+              <div class="modal-form-email mf-element mf-margin">
+                <label for="mf-email" class="mf-label">Почта</label>
+                <input type="text" name="mf-email" id="mf-email"
+                  class="mf-input-boder mf-input-height mf-input-text mf-padding-svg mf-input-point">
+              </div>
+
+              <div class="modal-form-comment mf-element mf-margin-comment">
+                <label for="mf-comment" class="mf-label">Комментарий</label>
+                <textarea name="comment" id="mf-comment" class="mf-textarea mf-input-point" rows="10"
+                  placeholder="Введите текст"></textarea>
+              </div>
+
+              <div class="mf-checkbox">
+                <input type="checkbox" name="mf-policy" id="mf-policy" class="mf-input-boder mf-input-point" />
+                <label for="mf-policy" class="">Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="mf-policy">Условия
+                    договора</a></label>
+                </label>
+              </div>
+
+
+              <button class="mf-button-send" type="button">Отправить</button>
+
+
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
