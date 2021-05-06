@@ -763,7 +763,7 @@ img {
   color: var(--text-links-cl);
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
   background: var(--bg-darck-cl);
 
   transition: border var(--btn-sh-duration) var(--btn-sh-function);
@@ -772,6 +772,7 @@ img {
 .bot-sub-email-box:hover,
 .bot-sub-email-box:focus {
   border: 1px solid var(--text-accent-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   cursor: pointer;
   outline: none;
 }
@@ -806,6 +807,12 @@ img {
   color: var(--text-links-cl);
   background-color: var(--text-accent-cl);
   cursor: pointer;
+
+  transition: box-shadow var(--btn-sh-duration) var(--btn-sh-function);
+}
+
+.sub-telegram-btn:hover,
+.sub-telegram-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -987,18 +994,30 @@ img {
   margin-bottom: 30px;
 }
 
-.mf-checkbox label {
+.mf-checkbox-label {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 24px;
   color: var(--text-alt-cl);
 }
 
-.mf-checkbox input {
-  margin-right: 7px;
-  background-color: #212121;
+.mf-cb-svg {
   width: 16px;
   height: 15px;
-  border-radius: 2px;
+  margin-right: 7px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 4px;
+}
+
+.mf-checkbox input {
+  appearance: none;
+  position: absolute;
+}
+
+.mf-cb-condition:checked + .mf-cb-svg {
+  background-image: url(/images/checkbox.svg);
+  border: none;
 }
 
 .mf-policy {
@@ -1045,8 +1064,14 @@ img {
   margin-right: auto;
   cursor: pointer;
   padding: 10px 56px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: box-shadow var(--btn-sh-duration) var(--btn-sh-function);
+}
+
+.mf-button-send:hover,
+.mf-button-send:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-modal-close {
