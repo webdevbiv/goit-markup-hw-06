@@ -1016,10 +1016,9 @@ img {
 }
 
 .mf-cb-condition:checked + .mf-cb-svg {
-  background-image: url(/images/checkbox.svg);
   background-repeat: no-repeat;
   background-origin: border-box;
-  border: 2px solid rgba(33, 33, 33, 0);
+  background-image: url(/images/checkbox.svg);
 }
 
 .mf-policy {
