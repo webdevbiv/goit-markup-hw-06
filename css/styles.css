@@ -1017,7 +1017,8 @@ img {
 
 .mf-cb-condition:checked + .mf-cb-svg {
   background-image: url(/images/checkbox.svg);
-  border: none;
+  border: 2px solid rgba(33, 33, 33, 0);
+  background-origin: border-box;
 }
 
 .mf-policy {
