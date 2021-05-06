@@ -1003,13 +1003,11 @@ img {
 }
 
 .mf-cb-svg {
-  display: inline-flex;
   width: 16px;
   height: 15px;
   margin-right: 7px;
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 4px;
-  align-items: center;
 }
 
 .mf-checkbox input {
@@ -1019,8 +1017,9 @@ img {
 
 .mf-cb-condition:checked + .mf-cb-svg {
   background-image: url(/images/checkbox.svg);
-  border: 2px solid rgba(33, 33, 33, 0);
+  background-repeat: no-repeat;
   background-origin: border-box;
+  border: 2px solid rgba(33, 33, 33, 0);
 }
 
 .mf-policy {
