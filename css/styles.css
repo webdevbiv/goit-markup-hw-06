@@ -1019,7 +1019,7 @@ img {
   background-position: center;
   background-size: contain;
   border: 2px solid rgba(33, 33, 33, 0);
-  background-origin: border-box;
+  /* background-origin: border-box; */
 }
 
 .mf-policy {
