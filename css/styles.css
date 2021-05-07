@@ -1043,7 +1043,7 @@ img {
 }
 
 .mf-element:hover .mf-svg,
-.mf-element:focus .mf-svg {
+.mf-element:focus-within .mf-svg {
   cursor: pointer;
   fill: var(--text-accent-cl);
 }
