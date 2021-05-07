@@ -696,6 +696,7 @@ img {
 
 .bot-row {
   display: flex;
+  justify-content: space-between;
 }
 
 .sm-bot {
@@ -801,7 +802,7 @@ img {
 }
 
 .sub-telegram-btn {
-  padding: 10px 16px;
+  padding: 10px 28px;
   display: flex;
   align-items: center;
   border: none;
@@ -976,7 +977,7 @@ img {
 .modal-form textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   resize: none;
-  min-height: 120px;
+  height: 120px;
   padding: 12px 16px;
   font-size: 12px;
   line-height: 1.67;
