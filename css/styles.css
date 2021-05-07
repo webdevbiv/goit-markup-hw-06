@@ -1020,6 +1020,11 @@ img {
   border-radius: 4px;
 }
 
+.mf-checkbox-label:hover,
+.mf-checkbox-label:focus {
+  cursor: pointer;
+}
+
 .check-box-condition:checked + .mf-checkbox-label::before {
   background-image: url(../images/check-mark.svg);
   background-color: #2196f3;
