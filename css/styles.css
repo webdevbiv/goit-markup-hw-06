@@ -1013,7 +1013,7 @@ img {
 }
 
 .check-box-condition:checked + .mf-checkbox-label::before {
-  background-image: url(/images/check-mark.svg);
+  background-image: url(../images/check-mark.svg);
   background-color: #2196f3;
   background-repeat: no-repeat;
   background-position: center;
