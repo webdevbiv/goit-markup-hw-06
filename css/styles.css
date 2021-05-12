@@ -1026,6 +1026,12 @@ img {
   cursor: pointer;
 }
 
+.check-box-condition:hover + .mf-checkbox-label::before,
+.check-box-condition:focus + .mf-checkbox-label::before {
+  border: 2px solid var(--text-accent-cl);
+  border-radius: 4px;
+}
+
 /* .mf-checkbox-label:hover + .mf-checkbox-label::before {
   border-radius: 4px;
   border: 2px solid #2196f3;
